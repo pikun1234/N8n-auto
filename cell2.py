@@ -19,21 +19,21 @@ scenes = [
 flat_data = []
 
 for scene in scenes:
-    for sentence in scene["sentences"]:
+    for sentence in scene['sentences']:
         flat_data.append({
-            "text": sentence,
-            "scene": scene["scene"]
+            'text': sentence,
+            'scene': scene['scene']
         })
 
-music_keyword = "cinematic background music"
+music_keyword = 'cinematic background music'
 
 folders = [
-    "working/video_001/audio",
-    "working/video_001/image",
-    "working/video_001/video",
-    "working/video_001/output",
-    "working/video_001/raw_video",
-    "working/video_001/music"
+    'working/video_001/audio',
+    'working/video_001/image',
+    'working/video_001/video',
+    'working/video_001/output',
+    'working/video_001/raw_video',
+    'working/video_001/music'
 ]
 
 for f in folders:
