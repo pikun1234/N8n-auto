@@ -5,15 +5,14 @@ import shutil
 BASE = os.getcwd()
 
 scenes = [
-    {'scene': 'A 4K ultra realistic shot of a busy street in the morning with low light, captured using a DSLR camera with a shallow depth of field, showing child beggars on the street with a mix of emotions on their faces, while people walk by with a sense of urgency', 
-     'sentences': ['ଓଡିଶା ରାଜ୍ୟ ଶିଶୁ ଅଧିକାର ସୁରକ୍ଷା ଆୟୋଗ ରାସ୍ତାରୁ ଶିଶୁ ଭିକାରୀଙ୍କୁ ଅପସାରଣ କରିବା ପାଇଁ ନିର୍ଦେଶ ଜାରୀ କରିଛି', 
-      'ଏଥିରେ ପୁନର୍ବାସ ଓ ଅପମାନକ ବିରୁଦ୍ଧରେ ଆଇନଗତ କାର୍ଯ୍ୟ କରାଯିବ']}, 
-    {'scene': 'A high detail, ultra realistic visual of a care center in the daytime with natural light, captured using a wide-angle lens, showing rescued children engaging in educational activities with a sense of hope and rehabilitation', 
-     'sentences': ['ଉଦ୍ଧାର କରାଯାଇଥିବା ଶିଶୁମାନଙ୍କୁ ଯତ୍ନ କେନ୍ଦ୍ରରେ ରଖାଯିବ', 
-      'ସେମାନଙ୍କୁ ଶିକ୍ଷା ଓ ପରାମର୍ଶ ଦିଆଯିବ']}, 
-    {'scene': 'A 4K cinematic shot of a city location at night with emergency lights, captured using a DSLR camera with a high shutter speed, showing authorities taking immediate action against child exploitation', 
-     'sentences': ['ବିଭିନ୍ନ ସହର ସ୍ଥାନରେ ତତ୍କ୍ଷଣାତ କାର୍ଯ୍ୟ କରାଯିବ', 
-      'ଶୋଷଣକାରୀଙ୍କ ବିରୁଦ୍ଧରେ ଆଇନଗତ କାର୍ଯ୍ୟ କରାଯିବ']}
+    {'scene': 'A 4K ultra realistic shot of a hockey stadium in Rourkela, captured with a DSLR camera, under daylight, with a shallow depth of field, showing teams from various regions gathered on the field, with a mix of excitement and focus on their faces', 
+     'sentences': ['୭୫ତମ ଓଡ଼ିଶା ପୁଲିଶ ହକି ଚ୍ୟାମ୍ପିୟନସିପ ୨୦୨୫-୨୬ ରାଉରକେଲାରେ ସଫଳତାର ସାଥେ ସମାପ୍ତ ହୋଇଛି', 
+              'ବିଭିନ୍ନ ଅଞ୍ଚଳର ଦଳଗୁଡ଼ିକ ଏଥିରେ ଭାଗ ନେଇଛନ୍ତି']},
+    {'scene': 'A high detail, realistic texture, ultra realistic visual of the championship trophy, captured with a close-up shot, using a macro lens, under emergency lights, with a high depth of field, showing the intricate design and details of the trophy', 
+     'sentences': ['ଏହି ଘଟଣା ଭଲ ଭାବରେ ଆୟୋଜିତ ହୋଇଥିଲା', 
+              'କାର୍ଯକ୍ରମ ସମୟ ମଧ୍ୟରେ ସମାପ୍ତ ହୋଇଥିଲା']},
+    {'scene': 'A 4K cinematic shot of the hockey players in action, captured with a wide-angle lens, under daylight, with a low depth of field, showing the speed and skill of the players, with a sense of motion blur, and realistic textures of the grass and stadium', 
+     'sentences': ['ରାଉରକେଲାରେ ଏହି କାର୍ଯକ୍ରମ ଅନୁଷ୍ଠିତ ହୋଇଥିଲା']}
 ]
 
 flat_data = []
