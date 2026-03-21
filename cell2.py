@@ -19,10 +19,7 @@ flat_data = []
 
 for scene in scenes:
     for sentence in scene['sentences']:
-        flat_data.append({
-            'text': sentence,
-            'scene': scene['scene']
-        })
+        flat_data.append({ 'text': sentence, 'scene': scene['scene'] })
 
 music_keyword = 'cinematic background music'
 
