@@ -1,11 +1,12 @@
 # ==========================================
-# 🟨 CELL 2: AUTO GENERATED NEWS SCRIPT
+# 🟨 AUTO GENERATED SCRIPT (LIGHTNING READY)
 # ==========================================
 
 import os
 import shutil
 
-BASE = "/content/drive/MyDrive/AI_VIDEO_SYSTEM"
+# ✅ Use current working directory (IMPORTANT)
+BASE = os.getcwd()
 
 scenes = [
     {'scene': 'A 4K ultra realistic shot of a gas station at dawn, with a DSLR camera capturing the scene from a low angle, depth of field focusing on the gas pumps, and motion blur from passing vehicles, as people wait in line to fill their tanks', 
@@ -19,17 +20,35 @@ scenes = [
       'ଏହି ଆଇନ କଳା ବଜାର ପ୍ରତିରୋଧ କରିବାରେ ସାହାଯ୍ୟ କରିବ']}
 ]
 
-# Standard Validation and Folder Clean
+# 🔥 FLAT DATA (REQUIRED FOR YOUR ENGINE)
+flat_data = []
+for scene in scenes:
+    for sentence in scene["sentences"]:
+        flat_data.append({
+            "text": sentence,
+            "scene": scene["scene"]
+        })
+
+# 🔥 OPTIONAL (for music engine safety)
+music_keyword = "cinematic background music"
+
+# ===============================
+# VALIDATION
+# ===============================
 total_sentences = sum(len(s['sentences']) for s in scenes)
 print(f"✅ Loaded Script: {len(scenes)} Scenes and {total_sentences} Sentences.")
 print(f"⏱️ Estimated Duration: {(total_sentences * 6.5) / 60:.2f} Minutes.")
 
+# ===============================
+# FOLDER SETUP (LIGHTNING SAFE)
+# ===============================
 folders = [
     "working/video_001/audio",
     "working/video_001/image",
     "working/video_001/video",
     "working/video_001/output",
-    "working/video_001/raw_video"
+    "working/video_001/raw_video",
+    "working/video_001/music"
 ]
 
 for f in folders:
