@@ -29,6 +29,7 @@ scenes = [
 ]
 
 flat_data = []
+
 for scene in scenes:
     for sentence in scene["sentences"]:
         flat_data.append({
