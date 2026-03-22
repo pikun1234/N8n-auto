@@ -5,14 +5,18 @@ import shutil
 BASE = os.getcwd()
 
 scenes = [
-    {'scene': 'A 4K ultra realistic shot of a hockey stadium in Rourkela, captured with a DSLR camera, under daylight, with a shallow depth of field, showing teams from various regions gathered on the field, with a mix of excitement and focus on their faces', 
-     'sentences': ['୭୫ତମ ଓଡ଼ିଶା ପୁଲିଶ ହକି ଚ୍ୟାମ୍ପିୟନସିପ ୨୦୨୫-୨୬ ରାଉରକେଲାରେ ସଫଳତାର ସାଥେ ସମାପ୍ତ ହୋଇଛି', 
-              'ବିଭିନ୍ନ ଅଞ୍ଚଳର ଦଳଗୁଡ଼ିକ ଏଥିରେ ଭାଗ ନେଇଛନ୍ତି']},
-    {'scene': 'A high detail, realistic texture, ultra realistic visual of the championship trophy, captured with a close-up shot, using a macro lens, under emergency lights, with a high depth of field, showing the intricate design and details of the trophy', 
-     'sentences': ['ଏହି ଘଟଣା ଭଲ ଭାବରେ ଆୟୋଜିତ ହୋଇଥିଲା', 
-              'କାର୍ଯକ୍ରମ ସମୟ ମଧ୍ୟରେ ସମାପ୍ତ ହୋଇଥିଲା']},
-    {'scene': 'A 4K cinematic shot of the hockey players in action, captured with a wide-angle lens, under daylight, with a low depth of field, showing the speed and skill of the players, with a sense of motion blur, and realistic textures of the grass and stadium', 
-     'sentences': ['ରାଉରକେଲାରେ ଏହି କାର୍ଯକ୍ରମ ଅନୁଷ୍ଠିତ ହୋଇଥିଲା']}
+    {
+        'scene': 'A 4K, ultra-realistic, daytime shot with a slight zoom, captured using a DSLR camera, showing a veterinarian in a livestock farm in Odisha, with a depth of field emphasizing the interaction between the veterinarian and the animals, set against a backdrop of green pastures and farm buildings under a clear blue sky with a few white clouds, conveying a sense of hope and improvement in the animal husbandry sector.',
+        'sentences': ['ଓଡ଼ିଶା ତାର ପଶୁ ସମ୍ପଦ କ୍ଷେତ୍ରକୁ ଉନ୍ନତ କରିବା ପାଇଁ ପାଞ୍ଚ ବର୍ଷିଆ ବିନିଯୋଗ ଯୋଜନା ଉପର ଜୋର ଦେଇଛି।', 'ଏଥିରେ ପଶୁ ସ୍ୱାସ୍ଥ୍ୟ ଓ ଉତ୍ପାଦନଶୀଳତା ଉନ୍ନତ କରିବା ପାଇଁ ଫୋକସ କରାଯାଉଛି।']
+    },
+    {
+        'scene': 'A high-detail, 4K, ultra-realistic visual of a vaccination drive in progress, with a motion blur hinting at the movement of the veterinarians and the animals, captured in a slight low-light condition using a DSLR camera, emphasizing the depth of field to highlight the vaccination process, set in a bustling farm environment with animals and farm workers in the foreground and background.',
+        'sentences': ['ରାଜ୍ୟରେ ଉଲ୍ଲେଖନୀୟ ଟିକାକରଣ କଭରେଜ ଦେଖାଯାଇଛି।', 'ପଶୁ ସ୍ୱାସ୍ଥ୍ୟ ଉନ୍ନତ କରିବା ପାଇଁ ନବୀନ ଅଭ୍ୟାସ ଗ୍ରହଣ କରାଯାଉଛି।']
+    },
+    {
+        'scene': 'An inspirational, 4K, ultra-realistic shot of a farmer in Odisha, with a slight pan to the right, showcasing the farmer's interaction with the livestock, captured using a DSLR camera, emphasizing the depth of field to highlight the farmer's smile and the healthy animals, set against a backdrop of a thriving farm with lush greenery and clear blue sky, conveying a sense of prosperity and success in the animal husbandry sector.',
+        'sentences': ['ସରକାର ଆର୍ଥିକ ଆର୍ଥିକ ଲାଭ ବୃଦ୍ଧି କରିବା ଏବଂ ପଶୁ ସମ୍ପଦ କ୍ଷେତ୍ରରେ ବୈଜ୍ଞାନିକ ଅଭ୍ୟାସ ପ୍ରଚାର କରିବା ପାଇଁ ଉଦ୍ୟୋଗ ସମର୍ଥନ କରୁଛି।']
+    }
 ]
 
 flat_data = []
