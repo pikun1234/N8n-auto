@@ -6,16 +6,19 @@ BASE = os.getcwd()
 
 scenes = [
     {
-        'scene': 'A 4K, ultra-realistic, daytime shot with a slight zoom, captured using a DSLR camera, showing a veterinarian in a livestock farm in Odisha, with a depth of field emphasizing the interaction between the veterinarian and the animals, set against a backdrop of green pastures and farm buildings under a clear blue sky with a few white clouds, conveying a sense of hope and improvement in the animal husbandry sector.',
-        'sentences': ['ଓଡ଼ିଶା ତାର ପଶୁ ସମ୍ପଦ କ୍ଷେତ୍ରକୁ ଉନ୍ନତ କରିବା ପାଇଁ ପାଞ୍ଚ ବର୍ଷିଆ ବିନିଯୋଗ ଯୋଜନା ଉପର ଜୋର ଦେଇଛି।', 'ଏଥିରେ ପଶୁ ସ୍ୱାସ୍ଥ୍ୟ ଓ ଉତ୍ପାଦନଶୀଳତା ଉନ୍ନତ କରିବା ପାଇଁ ଫୋକସ କରାଯାଉଛି।']
+        'scene': 'A 4K, ultra-realistic, daytime shot with a slight zoom, captured using a DSLR camera, showing a bustling industrial area in Odisha with steel and mining equipment in the foreground, workers in the midground, and a clear blue sky in the background, emphasizing the growth in the steel and mining sectors.',
+        'sentences': ['ଓଡ଼ିଶାର ଶିଳ୍ପ କ୍ଷେତ୍ର ଇସ୍ପାତ ଓ ଖଣିଜ କ୍ଷେତ୍ରରେ ଉଲ୍ଲେଖନୀୟ ବୃଦ୍ଧି ପାଇଛି।', 
+                 'ଏହି ବୃଦ୍ଧି ରାଜ୍ୟର ଅର୍ଥନୈତିକ ଉନ୍ନତିରେ ଗୁରୁତ୍ଵପୂର୍ଣ୍ଣ ଭୂମିକା ପାଲନ କରିଛି।']
     },
     {
-        'scene': 'A high-detail, 4K, ultra-realistic visual of a vaccination drive in progress, with a motion blur hinting at the movement of the veterinarians and the animals, captured in a slight low-light condition using a DSLR camera, emphasizing the depth of field to highlight the vaccination process, set in a bustling farm environment with animals and farm workers in the foreground and background.',
-        'sentences': ['ରାଜ୍ୟରେ ଉଲ୍ଲେଖନୀୟ ଟିକାକରଣ କଭରେଜ ଦେଖାଯାଇଛି।', 'ପଶୁ ସ୍ୱାସ୍ଥ୍ୟ ଉନ୍ନତ କରିବା ପାଇଁ ନବୀନ ଅଭ୍ୟାସ ଗ୍ରହଣ କରାଯାଉଛି।']
+        'scene': 'A high-detail, ultra-realistic visual of a renewable energy farm in Odisha, with wind turbines and solar panels in the foreground, and a vast, open landscape in the background, captured during a sunny day with a slight motion blur to convey activity, using a DSLR camera with a wide-angle lens.',
+        'sentences': ['ନବୀକରଣୀୟ ଶକ୍ତି କ୍ଷେତ୍ରରେ ମଧ୍ୟ ଓଡ଼ିଶା ଉଲ୍ଲେଖନୀୟ ଅଗ୍ରଗତି କରିଛି।', 
+                 'ଏହି ପ୍ରୟାସ ପରିବେଶ ସୁରକ୍ଷା ଏବଂ ଶକ୍ତି ସୁରକ୍ଷାର ଦିଗରେ ଏକ ମହତ୍ଵପୂର୍ଣ୍ଣ ପଦକ୍ଷେପ।']
     },
     {
-        'scene': 'An inspirational, 4K, ultra-realistic shot of a farmer in Odisha, with a slight pan to the right, showcasing the farmer's interaction with the livestock, captured using a DSLR camera, emphasizing the depth of field to highlight the farmer's smile and the healthy animals, set against a backdrop of a thriving farm with lush greenery and clear blue sky, conveying a sense of prosperity and success in the animal husbandry sector.',
-        'sentences': ['ସରକାର ଆର୍ଥିକ ଆର୍ଥିକ ଲାଭ ବୃଦ୍ଧି କରିବା ଏବଂ ପଶୁ ସମ୍ପଦ କ୍ଷେତ୍ରରେ ବୈଜ୍ଞାନିକ ଅଭ୍ୟାସ ପ୍ରଚାର କରିବା ପାଇଁ ଉଦ୍ୟୋଗ ସମର୍ଥନ କରୁଛି।']
+        'scene': 'A 4K, cinematic shot of a meeting between investors and government officials in Odisha, discussing infrastructure and technology investments, with a shallow depth of field to focus on the speakers, and a professional background to convey a sense of importance, captured with a DSLR camera and a standard zoom lens.',
+        'sentences': ['ଓଡ଼ିଶା ସରକାର ପ୍ରତ୍ୟକ୍ଷ ଓ ପরୋକ୍ଷ ନିବେଶ ଆକର୍ଷଣ କରିବା ପାଇଁ ଏକ ନିର୍ଦ୍ଦିଷ୍ଟ ଶିଳ୍ପ ନୀତି ଅନୁସରଣ କରୁଛି।', 
+                 'ଏହି ନୀତି ମାଧ୍ୟମରେ ରାଜ୍ୟ ଅଧିକ ନିବେଶ ଆକର୍ଷଣ କରି ଅର୍ଥନୈତିକ ବୃଦ୍ଧି ହାର ବଢାଇବାର ଲକ୍ଷ୍ୟ ରଖିଛି।']
     }
 ]
 
