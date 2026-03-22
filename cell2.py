@@ -5,12 +5,15 @@ import shutil
 BASE = os.getcwd()
 
 scenes = [
-    {'scene': 'a 4K ultra realistic cinematic shot of a traditional Odia kitchen with a large earthen pot of pakhala, with steam rising from it, and a woman in the foreground stirring the pakhala with a wooden spoon, with a blurred background of a kitchen garden', 'sentences': ['ଓଡିଶାରେ ପଖାଳ ଖାଇବା ପରମ୍ପରା ରହିଛି, ଯାହା ଗ୍ରୀଷ୍ମ ଋତୁରେ ଶରୀର ଠଣା ରଖିବାକୁ ସାହାଯ୍ୟ କରେ', 'ପଖାଳ ଏକ ପାରମ୍ପରିକ ଓଡିଆ ଖାଦ୍ୟ ଯାହା ଓଡିଶାରେ ବାର୍ଷିକ ପଖାଳ ଦିବସ ଭାବରେ ପାଳନ କରାଯାଏ']},
-    {'scene': 'a 4K ultra realistic cinematic shot of a group of people from different age groups and professions gathered around a large table, with a variety of traditional Odia dishes, including pakhala, and they are all smiling and chatting while enjoying their meal', 'sentences': ['ପଖାଳ ଦିବସ ଓଡିଶାର ସାଂସ୍କୃତିକ ଐତିହ୍ୟ ଏବଂ ଖାଦ୍ୟ ପରମ୍ପରାକୁ ପ୍ରଚାର କରିବା ଲକ୍ଷ୍ୟରେ ପାଳନ କରାଯାଏ', 'ଏହି ଅନୁଷ୍ଠାନ ଓଡିଶା ଏବଂ ବିଶ୍ଵର ଓଡିଆ ସମ୍ପ୍ରଦାୟଦ୍ୱାରା ଉତ୍ସାହର ସହିତ ପାଳନ କରାଯାଏ']},
-    {'scene': 'a 4K ultra realistic cinematic shot of a woman sitting in a traditional Odia setting, with a bowl of pakhala in front of her, and she is smiling while taking a bite of the pakhala, with a blurred background of a traditional Odia kitchen', 'sentences': ['ପଖାଳ ଓଡିଶାର ଏକ ଅତ୍ୟନ୍ତ ଲୋକପ୍ରିୟ ଖାଦ୍ୟ, ଯାହା ଗ୍ରୀଷ୍ମ ଋତୁରେ ଶରୀର ଠଣା ରଖିବାକୁ ସାହାଯ୍ୟ କରେ', 'ପଖାଳ ଖାଇବା ପରମ୍ପରା ଓଡିଶାର ସାଂସ୍କୃତିକ ଐତିହ୍ୟର ଏକ ଅନନ୍ୟ ଅଂଶ']},
-    {'scene': 'a 4K ultra realistic cinematic shot of a group of people from different age groups and professions gathered around a large table, with a variety of traditional Odia dishes, including pakhala, and they are all smiling and chatting while enjoying their meal, with a blurred background of a traditional Odia setting', 'sentences': ['ପଖାଳ ଦିବସ ଓଡିଶାର ସାଂସ୍କୃତିକ ଐତିହ୍ୟ ଏବଂ ଖାଦ୍ୟ ପରମ୍ପରାକୁ ପ୍ରଚାର କରିବା ଲକ୍ଷ୍ୟରେ ପାଳନ କରାଯାଏ', 'ଏହି ଅନୁଷ୍ଠାନ ଓଡିଶା ଏବଂ ବିଶ୍ଵର ଓଡିଆ ସମ୍ପ୍ରଦାୟଦ୍ୱାରା ଉତ୍ସାହର ସହିତ ପାଳନ କରାଯାଏ']},
-    {'scene': 'a 4K ultra realistic cinematic shot of a woman sitting in a traditional Odia setting, with a bowl of pakhala in front of her, and she is smiling while taking a bite of the pakhala, with a blurred background of a traditional Odia kitchen', 'sentences': ['ପଖାଳ ଖାଇବା ପରମ୍ପରା ଓଡିଶାର ସାଂସ୍କୃତିକ ଐତିହ୍ୟର ଏକ ଅନନ୍ୟ ଅଂଶ', 'ପଖାଳ ଏକ ପାରମ୍ପରିକ ଓଡିଆ ଖାଦ୍ୟ ଯାହା ଓଡିଶାରେ ବାର୍ଷିକ ପଖାଳ ଦିବସ ଭାବରେ ପାଳନ କରାଯାଏ']}
-]
+    {'scene': 'A 35mm lens captures a warm, golden light-filled scene of a traditional Odia kitchen, with a large earthen pot in the foreground, a woman in the midground expertly preparing pakhala, and a blurred background of lush green trees swaying gently in the breeze, as the camera slowly zooms in on the pot.', 
+     'sentences': ['ଓଡିଶାରେ ପଖାଳ ଖାଇବା ପରମ୍ପରା ରହିଛି, ଯାହା ଗ୍ରୀଷ୍ମ ଋତୁରେ ଶରୀର ଠଣା ରଖିବାକୁ ସାହାଯ୍ୟ କରେ ।', 
+      'ପଖାଳ ଏକ ପାରମ୍ପରିକ ଓଡିଆ ଖାଦ୍ୟ ଯାହା ଓଡିଶାରେ ବାର୍ଷିକ ପଖାଳ ଦିବସ ପାଳନ କରାଯାଏ ।']},
+    {'scene': 'A 50mm lens captures a vibrant, colorful scene of a bustling street in Odisha, with people of all ages walking in the foreground, street food stalls in the midground selling various traditional Odia dishes, and a clear blue sky in the background, as the camera pans across the scene, capturing the excitement and energy of the crowd.', 
+     'sentences': ['ପଖାଳ ଦିବସ ଓଡିଶା ଆଦି ଓଡିଆ ସମ୍ପ୍ରଦାୟ ବିଶ୍ଵବ୍ୟାପୀ ଉତ୍ସାହର ସହିତ ପାଳନ କରାଯାଏ ।', 
+      'ଏହି ଅନୁଷ୍ଠାନ ପାରମ୍ପରିକ ଓଡିଆ ଖାଦ୍ୟ ଏବଂ ସଂସ୍କୃତିର ଗୁରୁତ୍ଵ ଉପରେ ଜୋର ଦେଇ ।']},
+    {'scene': 'A 35mm lens captures a serene, peaceful scene of a traditional Odia family sitting together, with a steaming hot bowl of pakhala in the foreground, a woman serving the dish in the midground, and a warm, cozy background of a decorated living room, as the camera slowly zooms out, capturing the love and bonding of the family.', 
+     'sentences': ['ପଖାଳ ଓଡିଶାର ଏକ ଅତି ପୁରାତନ ଖାଦ୍ୟ, ଯାହା ଗ୍ରୀଷ୍ମ ଋତୁରେ ଶରୀର ଠଣା ରଖିବାକୁ ସାହାଯ୍ୟ କରେ ।', 
+      'ପଖାଳ ଖାଇବା ପରମ୍ପରା ଓଡିଶାର ସଂସ୍କୃତି ଏବଂ ଐତିହ୍ୟର ଏକ ଅଙ୍ଗ ।']}]
 
 flat_data = []
 
@@ -18,7 +21,7 @@ for scene in scenes:
     for sentence in scene['sentences']:
         flat_data.append({ 'text': sentence, 'scene': scene['scene'] })
 
-music_keyword = 'cinematic background music'
+music_keyword = "warm cultural traditional flute"
 
 folders = [
     'working/video_001/audio',
