@@ -5,21 +5,11 @@ import shutil
 BASE = os.getcwd()
 
 scenes = [
-    {'scene': '4K ultra realistic cinematic image of a cybercrime police operation in Odisha, with officers in the foreground, computers and gadgets in the midground, and a cityscape in the background, with a sense of motion and depth of field', 
-     'sentences': ['ଓଡିଶା ପୋଲିସ ଅଭିଯାନ ଏକ ନିର୍ବାଚନ, ଯେଉଁଥିରେ ସାଇବର ଅପରାଧ ମାମଲାରେ ଚାରି ଜଣକୁ ଗିରଫତାର କରାଯାଇଛି', 
-              'ଏହି ଅଭିଯାନ ସାଇବର ଅପରାଧକୁ ରୋକିବାରେ ଏକ ମୁଖ୍ୟ ସଫଳତା ଅର୍ଜନ କରିଛି']},
-    {'scene': 'DSLR shot of a police officer explaining the operation to a group of people, with a sense of lighting and emotion, and a cityscape in the background', 
-     'sentences': ['ପୋଲିସ ଅଧିକାରୀ ଏହି ଅଭିଯାନ ବିଷୟରେ ଲୋକଙ୍କୁ ଜଣାଉଛନ୍ତି, ଯେ ଏଥିରେ ଲକ୍ଷ ଲକ୍ଷ ଟଙ୍କା ଲୋକଙ୍କୁ ଠକି ଦେଉଥିବା ଲୋକଙ୍କୁ ଗିରଫତାର କରାଯାଇଛି', 
-              'ଏହି ଅଭିଯାନ ଓଡିଶା ପୋଲିସର ଏକ ମୁଖ୍ୟ ସଫଳତା']},
-    {'scene': 'Ultra realistic cinematic image of a person who was a victim of cybercrime, with a sense of emotion and depth of field, and a cityscape in the background', 
-     'sentences': ['ସାଇବର ଅପରାଧର ଶିକାର ହୋଇଥିବା ଲୋକଙ୍କ ପାଇଁ ଏହି ଅଭିଯାନ ଏକ ନିଶ୍ଚିତ ସହାୟତା', 
-              'ଏହି ଅଭିଯାନ ଓଡିଶା ପୋଲିସର ଏକ ମୁଖ୍ୟ ପଦକ୍ଷେପ']},
-    {'scene': '4K ultra realistic cinematic image of a police officer helping a victim of cybercrime, with a sense of emotion and depth of field, and a cityscape in the background', 
-     'sentences': ['ପୋଲିସ ଅଧିକାରୀ ସାଇବର ଅପରାଧର ଶିକାର ହୋଇଥିବା ଲୋକଙ୍କୁ ସହାୟତା କରୁଛନ୍ତି', 
-              'ଏହି ଅଭିଯାନ ଓଡିଶା ପୋଲିସର ଏକ ମୁଖ୍ୟ ସଫଳତା']},
-    {'scene': 'DSLR shot of a person who was a victim of cybercrime, with a sense of emotion and depth of field, and a cityscape in the background, with a message of hope and resilience', 
-     'sentences': ['ସାଇବର ଅପରାଧର ଶିକାର ହୋଇଥିବା ଲୋକଙ୍କ ପାଇଁ ଏହି ଅଭିଯାନ ଏକ ନିଶ୍ଚିତ ସହାୟତା', 
-              'ଆସୁନ୍ତୁ ଆମେ ଏକସାଥି ସାଇବର ଅପରାଧ ବିରୁଦ୍ଧରେ ଲଢ଼ୁଛୁ']}
+    {'scene': 'a 4K ultra realistic cinematic shot of a traditional Odia kitchen with a large earthen pot of pakhala, with steam rising from it, and a woman in the foreground stirring the pakhala with a wooden spoon, with a blurred background of a kitchen garden', 'sentences': ['ଓଡିଶାରେ ପଖାଳ ଖାଇବା ପରମ୍ପରା ରହିଛି, ଯାହା ଗ୍ରୀଷ୍ମ ଋତୁରେ ଶରୀର ଠଣା ରଖିବାକୁ ସାହାଯ୍ୟ କରେ', 'ପଖାଳ ଏକ ପାରମ୍ପରିକ ଓଡିଆ ଖାଦ୍ୟ ଯାହା ଓଡିଶାରେ ବାର୍ଷିକ ପଖାଳ ଦିବସ ଭାବରେ ପାଳନ କରାଯାଏ']},
+    {'scene': 'a 4K ultra realistic cinematic shot of a group of people from different age groups and professions gathered around a large table, with a variety of traditional Odia dishes, including pakhala, and they are all smiling and chatting while enjoying their meal', 'sentences': ['ପଖାଳ ଦିବସ ଓଡିଶାର ସାଂସ୍କୃତିକ ଐତିହ୍ୟ ଏବଂ ଖାଦ୍ୟ ପରମ୍ପରାକୁ ପ୍ରଚାର କରିବା ଲକ୍ଷ୍ୟରେ ପାଳନ କରାଯାଏ', 'ଏହି ଅନୁଷ୍ଠାନ ଓଡିଶା ଏବଂ ବିଶ୍ଵର ଓଡିଆ ସମ୍ପ୍ରଦାୟଦ୍ୱାରା ଉତ୍ସାହର ସହିତ ପାଳନ କରାଯାଏ']},
+    {'scene': 'a 4K ultra realistic cinematic shot of a woman sitting in a traditional Odia setting, with a bowl of pakhala in front of her, and she is smiling while taking a bite of the pakhala, with a blurred background of a traditional Odia kitchen', 'sentences': ['ପଖାଳ ଓଡିଶାର ଏକ ଅତ୍ୟନ୍ତ ଲୋକପ୍ରିୟ ଖାଦ୍ୟ, ଯାହା ଗ୍ରୀଷ୍ମ ଋତୁରେ ଶରୀର ଠଣା ରଖିବାକୁ ସାହାଯ୍ୟ କରେ', 'ପଖାଳ ଖାଇବା ପରମ୍ପରା ଓଡିଶାର ସାଂସ୍କୃତିକ ଐତିହ୍ୟର ଏକ ଅନନ୍ୟ ଅଂଶ']},
+    {'scene': 'a 4K ultra realistic cinematic shot of a group of people from different age groups and professions gathered around a large table, with a variety of traditional Odia dishes, including pakhala, and they are all smiling and chatting while enjoying their meal, with a blurred background of a traditional Odia setting', 'sentences': ['ପଖାଳ ଦିବସ ଓଡିଶାର ସାଂସ୍କୃତିକ ଐତିହ୍ୟ ଏବଂ ଖାଦ୍ୟ ପରମ୍ପରାକୁ ପ୍ରଚାର କରିବା ଲକ୍ଷ୍ୟରେ ପାଳନ କରାଯାଏ', 'ଏହି ଅନୁଷ୍ଠାନ ଓଡିଶା ଏବଂ ବିଶ୍ଵର ଓଡିଆ ସମ୍ପ୍ରଦାୟଦ୍ୱାରା ଉତ୍ସାହର ସହିତ ପାଳନ କରାଯାଏ']},
+    {'scene': 'a 4K ultra realistic cinematic shot of a woman sitting in a traditional Odia setting, with a bowl of pakhala in front of her, and she is smiling while taking a bite of the pakhala, with a blurred background of a traditional Odia kitchen', 'sentences': ['ପଖାଳ ଖାଇବା ପରମ୍ପରା ଓଡିଶାର ସାଂସ୍କୃତିକ ଐତିହ୍ୟର ଏକ ଅନନ୍ୟ ଅଂଶ', 'ପଖାଳ ଏକ ପାରମ୍ପରିକ ଓଡିଆ ଖାଦ୍ୟ ଯାହା ଓଡିଶାରେ ବାର୍ଷିକ ପଖାଳ ଦିବସ ଭାବରେ ପାଳନ କରାଯାଏ']}
 ]
 
 flat_data = []
